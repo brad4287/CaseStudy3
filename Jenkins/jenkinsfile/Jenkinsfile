@@ -1,7 +1,7 @@
 node {
  try {
  
- emailext body: 'Assignment Case Study 3', subject: 'Pipeline Job started', to: 'brad4287@gmail.com'
+ emailext body: 'Assignment Case Study 3', subject: 'Pipeline Job is in progress', to: 'brad4287@gmail.com'
  
  stage('Git CheckOut') {
     git branch: 'main', url: 'https://github.com/brad4287/CaseStudy3.git'
