@@ -45,21 +45,6 @@ java.lang.IllegalStateException: delivered here
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-2020-12-22 17:01:27.193+0000 [id=198]	INFO	o.j.p.w.cps.CpsStepContext#completed: new failure
-java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
-	at java.util.ArrayList.get(ArrayList.java:435)
-	at org.jfrog.hudson.pipeline.common.executors.GetArtifactoryServerExecutor.execute(GetArtifactoryServerExecutor.java:55)
-	at org.jfrog.hudson.pipeline.declarative.utils.DeclarativePipelineUtils.getArtifactoryServer(DeclarativePipelineUtils.java:83)
-	at org.jfrog.hudson.pipeline.declarative.steps.generic.GenericStep$Execution.setGenericParameters(GenericStep.java:95)
-	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:33)
-	at org.jfrog.hudson.pipeline.declarative.steps.generic.UploadStep$Execution.run(UploadStep.java:24)
-	at org.jenkinsci.plugins.workflow.steps.SynchronousNonBlockingStepExecution.lambda$start$0(SynchronousNonBlockingStepExecution.java:47)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
 2020-12-22 17:01:27.193+0000 [id=198]	INFO	o.j.p.w.cps.CpsStepContext#completed: previously delivered here
 java.lang.Throwable
 	at org.jenkinsci.plugins.workflow.cps.CpsStepContext.completed(CpsStepContext.java:327)
